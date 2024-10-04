@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  width: 360px;
+  height: 528px;
+  border: 1px solid black;
+  border-radius: 16px;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  position: absolute;
+  top: 23px;
+  right: 31px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-img {
+  width: 8px;
+}
