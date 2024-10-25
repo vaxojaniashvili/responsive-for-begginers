@@ -3,33 +3,95 @@
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
+li {
+  list-style: none;
 }
 
-.container {
-  position: relative;
-  width: 360px;
-  height: 528px;
+a {
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  background-color: #333;
+  padding: 30px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.burgerMenu {
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+
+.testImage {
+  width: 100%;
+}
+.imagePhrarent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.imagesDiv {
+  max-width: 400px;
+}
+
+.card-1 {
+  width: 300px;
   border: 1px solid black;
-  border-radius: 16px;
 }
 
-.icon {
-  width: 32px;
-  height: 32px;
-  background-color: white;
-  position: absolute;
-  top: 23px;
-  right: 31px;
-  border-radius: 50%;
+.card-2 {
+  width: 300px;
+  border: 1px solid black;
+}
+.card-3 {
+  width: 300px;
+  border: 1px solid black;
+}
+
+.card-1 > img {
+  width: 100%;
+}
+
+.card-2 > img {
+  width: 100%;
+}
+
+.card-3 > img {
+  width: 100%;
+}
+section {
   display: flex;
   justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.topLorem {
+  display: none;
 }
 
-.icon-img {
-  width: 8px;
+@media (max-width: 600px) {
+  ul {
+    display: none;
+  }
+  .burgerMenu {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .topLorem {
+    display: block;
+  }
+  .bottomLorem {
+    display: none;
+  }
 }
